@@ -5,6 +5,7 @@ public class Cell : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer innerSprite;
     [SerializeField] private float size = 1;
+    //[SerializeField] private IAnswerTrakcer answerTrakcer;
     private bool isCorrect;
     private Sprite sprite;
 
@@ -15,7 +16,7 @@ public class Cell : MonoBehaviour
         this.isCorrect = isCorrect;
         this.innerSprite.sprite = innerSprite;
         this.name = name;
-        Invoke(nameof(AnimateWrongAnswer), 1f);
+        //Invoke(nameof(AnimateWrongAnswer), 1f);
         return this;
     }
 
