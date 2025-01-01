@@ -9,3 +9,4 @@ TimeLog:
 	2h - coding;
 	20m - scriptableObject studying
 	45m - coding
+	30m - Vcontainer studying

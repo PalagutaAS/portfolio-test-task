@@ -1,74 +1,73 @@
 using DG.Tweening;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
+using VContainer;
 
 public class GameGrid : MonoBehaviour
-{
-    public GameObject cellPrefab;
-    public LevelsConfig[] levelConfig;
+{ 
+    private Cell cellPrefab;
+    //private GameSettings gameSettings;
+    //private LevelSwithcer levelSwithcer;
+    private Dictionary<Vector2Int, Cell> cells = new Dictionary<Vector2Int, Cell>();
 
-    private List<Cell> cells = new List<Cell>();
-    private int levelCount = 1;
+    public Dictionary<Vector2Int, Cell> Cells { get => cells; }
 
-    private void Awake()
+    [Inject] 
+    private void Constructor(Cell cellPrefab)
     {
-        GenerateGridByLevelConfig(levelConfig[levelCount - 1]);
-        Invoke(nameof(PlayBounceEffect), 0.5f);
+        //this.levelSwithcer = levelSwithcer;
+        //this.gameSettings = gameSettings;
+        this.cellPrefab = cellPrefab;
     }
 
-    public void GenerateGridByLevelConfig(LevelsConfig levelConfig)
+    public void GenerateGrid()
+    {
+        ClearGrid();
+        Centering();
+        //GenerageGrid(this.gameSettings.GetLevelSpriteData(levelSwithcer.CurrentLevel));
+        //Invoke(nameof(PlayBounceEffect), 0.5f);
+    }
+    public void GenerateGridByLevelConfig(LevelProperties levelConfig)
     {
         ClearGrid();
         Centering();
         GenerageGrid(levelConfig);
-
     }
 
-    private void GenerageGrid(LevelsConfig levelConfig)
+    private void GenerageGrid(LevelProperties levelConfig)
     {
-        for (int x = 0; x < levelConfig.Properties.row; x++)
+        for (int x = 0; x < levelConfig.Row; x++)
         {
-            for (int y = 0; y < levelConfig.Properties.column; y++)
+            for (int y = 0; y < levelConfig.Column; y++)
             {
-                Cell cell = Instantiate(cellPrefab, transform).GetComponent<Cell>();
-                cell.gameObject.transform.localPosition = GetWorldPosition(new Vector2Int(x, y), levelConfig);
-                Sprite sprite = levelConfig.SpriteData.spriteDatas[1].sprite;
-                cell.Initialize(sprite, "sdfsdf", false);
-                cells.Add(cell);
+                //Cell cell = Instantiate(cellPrefab, transform).GetComponent<Cell>();
+                //Sprite sprite = levelConfig.IconSprites[1].Sprite;
+                //cell.Constructor(sprite, false);
+                cells.Add(new Vector2Int(x, y), null);
             }
         }
     }
 
-    private Vector3 GetWorldPosition(Vector2Int gridPosition, LevelsConfig levelConfig)
-    {
-        float cellSize = 1f;
-        float halthCellSize = cellSize / 2f;
-        float offsetX = ((levelConfig.Properties.row / 2f) - halthCellSize) * cellSize;
-        float offsetY = ((levelConfig.Properties.column / 2f) - halthCellSize) * cellSize;
-
-        return new Vector2((gridPosition.x * cellSize) - offsetX, -(gridPosition.y * cellSize) + offsetY);
-    }
-
     public void Centering()
     {
-        transform.position = new Vector3(0, 0, -10);
+        transform.position = Vector3.zero;
     }
     public void PlayBounceEffect()
     {
         DOTween.Sequence()
-            .Append(transform.DOScale(1.5f, 0.3f).SetEase(Ease.OutQuad))
-            .Append(transform.DOScale(0.8f, 0.2f).SetEase(Ease.InOutQuad))
-            .Append(transform.DOScale(1f, 0.2f).SetEase(Ease.OutBounce))
+            .Append(transform.DOScale(1.5f, 0.45f).SetEase(Ease.OutQuad))
+            .Append(transform.DOScale(0.8f, 0.35f).SetEase(Ease.InOutQuad))
+            .Append(transform.DOScale(1f, 0.25f).SetEase(Ease.OutBounce))
             .Play();
     }
 
     private void ClearGrid()
     {
-        foreach (var cell in cells)
+        foreach (var item in cells)
         {
-            Destroy(cell.gameObject);
+            Destroy(item.Value.gameObject);
         }
         cells.Clear();
     }
+
 }

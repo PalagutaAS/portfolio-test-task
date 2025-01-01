@@ -10,18 +10,17 @@ public class Cell : MonoBehaviour
     private Sprite sprite;
 
     public float Size { get => size; }
+    public Transform InnerSpriteTransform { get => innerSprite.transform; }
 
-    public Cell Initialize(Sprite innerSprite, string name, bool isCorrect)
+    public Cell Constructor(Sprite innerSprite, bool isCorrect)
     {
         this.isCorrect = isCorrect;
         this.innerSprite.sprite = innerSprite;
-        this.name = name;
-        //Invoke(nameof(AnimateWrongAnswer), 1f);
         return this;
     }
 
     private void AnimateWrongAnswer()
     {
-        innerSprite.transform.DOShakePosition(0.5f, 0.2f);
+        InnerSpriteTransform.DOShakePosition(0.5f, 0.2f);
     }
 }

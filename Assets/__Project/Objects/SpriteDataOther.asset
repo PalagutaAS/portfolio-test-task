@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b2c0487662b5d140bf82ca6514ef2ac, type: 3}
-  m_Name: New Data
+  m_Name: SpriteDataOther
   m_EditorClassIdentifier: 
-  spriteDatas:
+  iconSprites:
   - sprite: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
     name: +
   - sprite: {fileID: 21300000, guid: 65f0e363b74cf5845ab8c3fbc14f39ac, type: 3}
     name: '!'
-  - sprite: {fileID: 21300000, guid: f82dfc5fc3c5a8f4080a3550427019c8, type: 3}
-    name: down
-  - sprite: {fileID: 21300000, guid: 2bb4e96f5d0b02c468932d665a015c54, type: 3}
+  - sprite: {fileID: 21300000, guid: 626b9cddb29049e4cac50cd87b419945, type: 3}
+    name: x
+  - sprite: {fileID: 21300000, guid: ae53a7884da90e94eb5dfeab594b746c, type: 3}
     name: lock
-  - sprite: {fileID: 21300000, guid: 8a6cca56e2b63344eb4769cd92d93ffb, type: 3}
-    name: M
-  - sprite: {fileID: 21300000, guid: 70e3ce8ad01f39248a3ea97a35bcf238, type: 3}
-    name: X
-  - sprite: {fileID: 21300000, guid: cdb88fdb0cf46b244a667edaff21c7df, type: 3}
-    name: 2
-  - sprite: {fileID: 21300000, guid: c8a69ecdf54ac8e4b873466605de27ff, type: 3}
-    name: 1
-  - sprite: {fileID: 21300000, guid: c9ed6d6ea2f9657409bfa068d4846139, type: 3}
-    name: 3
+  - sprite: {fileID: 21300000, guid: 4d7e6e570e9d65a4c9a994783a0652e2, type: 3}
+    name: down
   - sprite: {fileID: 21300000, guid: 7f854f490da24e54f9e8383e446b5d81, type: 3}
     name: /
+  - sprite: {fileID: 21300000, guid: 68fafd0a2acc3774988418f657bf7b68, type: 3}
+    name: '-'
+  - sprite: {fileID: 21300000, guid: c8a69ecdf54ac8e4b873466605de27ff, type: 3}
+    name: 1
+  - sprite: {fileID: 21300000, guid: cdb88fdb0cf46b244a667edaff21c7df, type: 3}
+    name: 2
+  - sprite: {fileID: 21300000, guid: c9ed6d6ea2f9657409bfa068d4846139, type: 3}
+    name: 3

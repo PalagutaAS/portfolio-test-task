@@ -1,7 +1,8 @@
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class ClickController : MonoBehaviour, IClickController
-{
+{ 
     public void Clicked()
     {
         throw new System.NotImplementedException();
@@ -13,9 +14,7 @@ public class ClickController : MonoBehaviour, IClickController
     }
 }
 
-
-
-internal interface IClickController
+public interface IClickController
 {
     void Clicked();
 }
