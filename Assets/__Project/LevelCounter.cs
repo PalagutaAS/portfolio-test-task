@@ -1,4 +1,4 @@
-public class LevelSwithcer 
+public class LevelCounter
 {
     private int currentLevel = 1;
 

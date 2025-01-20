@@ -5,19 +5,20 @@ using VContainer;
 
 public class GameGrid : MonoBehaviour
 { 
-    private Cell cellPrefab;
-    //private GameSettings gameSettings;
-    //private LevelSwithcer levelSwithcer;
+    private GameSettings _gameSettings;
+    private LevelCounter _levelCounter;
+    private LevelProperties _levelConfig;
+
     private Dictionary<Vector2Int, Cell> cells = new Dictionary<Vector2Int, Cell>();
 
     public Dictionary<Vector2Int, Cell> Cells { get => cells; }
 
     [Inject] 
-    private void Constructor(Cell cellPrefab)
+    private void Constructor(LevelCounter levelCounter, GameSettings gameSettings)
     {
-        //this.levelSwithcer = levelSwithcer;
-        //this.gameSettings = gameSettings;
-        this.cellPrefab = cellPrefab;
+        _levelCounter = levelCounter;
+        _gameSettings = gameSettings;
+        _levelConfig = _gameSettings.GetLevelData(levelCounter.CurrentLevel);
     }
 
     public void GenerateGrid()
@@ -25,25 +26,26 @@ public class GameGrid : MonoBehaviour
         ClearGrid();
         Centering();
         //GenerageGrid(this.gameSettings.GetLevelSpriteData(levelSwithcer.CurrentLevel));
-        //Invoke(nameof(PlayBounceEffect), 0.5f);
     }
-    public void GenerateGridByLevelConfig(LevelProperties levelConfig)
+    public void GenerateGridByLevelConfig(List<Cell> cells)
     {
         ClearGrid();
         Centering();
-        GenerageGrid(levelConfig);
+        GenerageGrid(_levelConfig, cells);
     }
 
-    private void GenerageGrid(LevelProperties levelConfig)
+    private void GenerageGrid(LevelProperties levelConfig, List<Cell> cells)
     {
+        int i = 0;
         for (int x = 0; x < levelConfig.Row; x++)
         {
             for (int y = 0; y < levelConfig.Column; y++)
             {
-                //Cell cell = Instantiate(cellPrefab, transform).GetComponent<Cell>();
-                //Sprite sprite = levelConfig.IconSprites[1].Sprite;
-                //cell.Constructor(sprite, false);
-                cells.Add(new Vector2Int(x, y), null);
+                Vector2Int positionInGrid = new Vector2Int(x, y);
+                this.cells.Add(positionInGrid, cells[i]);
+                cells[i].transform.SetParent(transform, false);
+                cells[i].gameObject.transform.localPosition = GetWorldPosition(positionInGrid, levelConfig);
+                i++;
             }
         }
     }
@@ -52,6 +54,12 @@ public class GameGrid : MonoBehaviour
     {
         transform.position = Vector3.zero;
     }
+
+    public void PlayBoundsEffect()
+    {
+        Invoke(nameof(PlayBounceEffect), 0.5f);
+    }
+
     public void PlayBounceEffect()
     {
         DOTween.Sequence()
@@ -68,6 +76,16 @@ public class GameGrid : MonoBehaviour
             Destroy(item.Value.gameObject);
         }
         cells.Clear();
+    }
+
+    private Vector3 GetWorldPosition(Vector2Int positionOnGrid, LevelProperties levelConfig)
+    {
+        float cellSize = 1f;
+        float halthCellSize = cellSize / 2f;
+        float offsetX = ((levelConfig.Row / 2f) - halthCellSize) * cellSize;
+        float offsetY = ((levelConfig.Column / 2f) - halthCellSize) * cellSize;
+
+        return new Vector2((positionOnGrid.x * cellSize) - offsetX, -(positionOnGrid.y * cellSize) + offsetY);
     }
 
 }

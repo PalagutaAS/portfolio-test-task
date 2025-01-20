@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   properties:
-  - row: 5
-    column: 3
+  - row: 3
+    column: 1
     spriteData: {fileID: 11400000, guid: 97d4173c7e7da174ea85c4a9ef836cf1, type: 2}
   - row: 3
     column: 2

@@ -1,20 +1,17 @@
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class ClickController : MonoBehaviour, IClickController
-{ 
-    public void Clicked()
+public class ClickController : MonoBehaviour
+{
+    private IClickable clickable;
+
+    private void Awake()
     {
-        throw new System.NotImplementedException();
+        clickable = GetComponent<IClickable>();
     }
 
     private void OnMouseDown()
     {
-        Clicked();
+        clickable?.OnClick();
     }
-}
-
-public interface IClickController
-{
-    void Clicked();
 }

@@ -1,15 +1,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnswerProvider
+public interface IAnswerProvider
 {
-    private readonly LevelSwithcer levelSwithcer;
+    public int CorrentIndex { get; }
+    public List<int> IncorrentIndexes { get; }
+}
+
+public class AnswerProvider : IAnswerProvider
+{
+    private readonly LevelCounter levelSwithcer;
     private readonly GameSettings gameSettings;
 
     private int correntIndex;
     private List<int> incorrentIndexes;
     private List<int> tempCorrentIndexes;
-    public AnswerProvider(LevelSwithcer levelSwithcer, GameSettings gameSettings)
+    public AnswerProvider(LevelCounter levelSwithcer, GameSettings gameSettings)
     {
         this.levelSwithcer = levelSwithcer;
         this.gameSettings = gameSettings;
@@ -17,6 +23,9 @@ public class AnswerProvider
         tempCorrentIndexes = new List<int>();
         CalculateVariants();
     }
+
+    public int CorrentIndex { get => correntIndex; }
+    public List<int> IncorrentIndexes { get => incorrentIndexes; }
 
     public void CalculateVariants()
     {
@@ -40,6 +49,7 @@ public class AnswerProvider
 
         correntIndex = newIndex;
         tempCorrentIndexes.Add(correntIndex);
+
         Debug.Log($"Выбранный индекс: {correntIndex}");
     }
     
@@ -49,7 +59,7 @@ public class AnswerProvider
         IconSprites[] isp = lp.IconSprites;
         int allowedCountIncorect = (lp.Row * lp.Column) - 1;
         List<int> possibleIndexes = new List<int>();
-        for (int i = isp.Length; i >= 0; i--)
+        for (int i = 0; i < isp.Length; i++)
         {
             possibleIndexes.Add(i);
         }
@@ -62,12 +72,12 @@ public class AnswerProvider
             possibleIndexes.RemoveAt(newIndex);
         }
         while (allowedCountIncorect < possibleIndexes.Count);
+
         incorrentIndexes = possibleIndexes;
 
         foreach (var item in incorrentIndexes)
         {
             Debug.Log($"Неправельный индекс: {item}");
-
         }
     }
 }
