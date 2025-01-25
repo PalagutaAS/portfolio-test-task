@@ -15,6 +15,7 @@ public class AnswerProvider : IAnswerProvider
     private int correntIndex;
     private List<int> incorrentIndexes;
     private List<int> tempCorrentIndexes;
+
     public AnswerProvider(LevelCounter levelSwithcer, GameSettings gameSettings)
     {
         this.levelSwithcer = levelSwithcer;

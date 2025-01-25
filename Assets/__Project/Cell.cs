@@ -1,40 +1,35 @@
-using DG.Tweening;
 using UnityEngine;
+using VContainer;
 public interface IClickable
 {
     void OnClick();
 }
 
-public class Cell : MonoBehaviour, IClickable
+[RequireComponent(typeof(BoxCollider2D))]
+public class Cell : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer innerSprite;
-    [SerializeField] private float size = 1;
-    private bool isCorrect;
+    [Inject]
+    private readonly IAnswerTrakcer _answerTrakcer;
 
-    public float Size { get => size; }
-    public Transform InnerSpriteTransform { get => innerSprite.transform; }
+    [SerializeField] private SpriteRenderer _innerSprite;
+    [SerializeField] private float _size = 1;
+
+    private bool _isCorrect;
+
+    public float Size { get => _size; }
+    public Transform InnerSpriteTransform { get => _innerSprite.transform; }
+    public bool IsCorrect { get => _isCorrect; }
 
     public Cell Constructor(Sprite innerSprite, bool isCorrect)
     {
-        this.isCorrect = isCorrect;
-        this.innerSprite.sprite = innerSprite;
+        this._isCorrect = isCorrect;
+        this._innerSprite.sprite = innerSprite;
         return this;
     }
 
-    public void OnClick()
+    public void OnMouseDown()
     {
-        if (isCorrect)
-        {
-            Debug.Log("CORRECT ANSWER!");
-        } else
-        {
-            AnimateWrongAnswer();
-        }
-    }
-
-    private void AnimateWrongAnswer()
-    {
-        InnerSpriteTransform.DOShakePosition(0.4f, 0.19f);
+        _answerTrakcer.TapToCell(this);
     }
 
 }

@@ -9,9 +9,9 @@ public class GameGrid : MonoBehaviour
     private LevelCounter _levelCounter;
     private LevelProperties _levelConfig;
 
-    private Dictionary<Vector2Int, Cell> cells = new Dictionary<Vector2Int, Cell>();
+    private Dictionary<Vector2Int, Cell> _cells = new Dictionary<Vector2Int, Cell>();
 
-    public Dictionary<Vector2Int, Cell> Cells { get => cells; }
+    public Dictionary<Vector2Int, Cell> Cells { get => _cells; }
 
     [Inject] 
     private void Constructor(LevelCounter levelCounter, GameSettings gameSettings)
@@ -27,7 +27,7 @@ public class GameGrid : MonoBehaviour
         Centering();
         //GenerageGrid(this.gameSettings.GetLevelSpriteData(levelSwithcer.CurrentLevel));
     }
-    public void GenerateGridByLevelConfig(List<Cell> cells)
+    public void GenerateGridByCells(List<Cell> cells)
     {
         ClearGrid();
         Centering();
@@ -42,7 +42,7 @@ public class GameGrid : MonoBehaviour
             for (int y = 0; y < levelConfig.Column; y++)
             {
                 Vector2Int positionInGrid = new Vector2Int(x, y);
-                this.cells.Add(positionInGrid, cells[i]);
+                _cells.Add(positionInGrid, cells[i]);
                 cells[i].transform.SetParent(transform, false);
                 cells[i].gameObject.transform.localPosition = GetWorldPosition(positionInGrid, levelConfig);
                 i++;
@@ -55,27 +55,13 @@ public class GameGrid : MonoBehaviour
         transform.position = Vector3.zero;
     }
 
-    public void PlayBoundsEffect()
-    {
-        Invoke(nameof(PlayBounceEffect), 0.5f);
-    }
-
-    public void PlayBounceEffect()
-    {
-        DOTween.Sequence()
-            .Append(transform.DOScale(1.5f, 0.45f).SetEase(Ease.OutQuad))
-            .Append(transform.DOScale(0.8f, 0.35f).SetEase(Ease.InOutQuad))
-            .Append(transform.DOScale(1f, 0.25f).SetEase(Ease.OutBounce))
-            .Play();
-    }
-
     private void ClearGrid()
     {
-        foreach (var item in cells)
+        foreach (var item in _cells)
         {
             Destroy(item.Value.gameObject);
         }
-        cells.Clear();
+        _cells.Clear();
     }
 
     private Vector3 GetWorldPosition(Vector2Int positionOnGrid, LevelProperties levelConfig)

@@ -1,20 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
+using VContainer;
+using VContainer.Unity;
 
 public class CellsSpawner
 {
-    private Cell _cellPrefab;
+    private CellFactory _factory;
     private List<Cell> listCells = new List<Cell>();
-    public CellsSpawner(Cell cellPrefab)
+    public CellsSpawner(CellFactory factory)
     {
-        _cellPrefab = cellPrefab;
+        _factory = factory;
     }
     public List<Cell> GetCells() => listCells;
     public CellsSpawner CreateCells(int count)
     {
         for (int i = 0; i < count; i++)
         {
-            listCells.Add(Object.Instantiate(_cellPrefab).GetComponent<Cell>());
+            listCells.Add(_factory.Create());
         }
 
         return this;

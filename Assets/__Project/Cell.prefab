@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2308288808092926800}
   - component: {fileID: 2148079084252550487}
   m_Layer: 0
-  m_Name: Object
+  m_Name: InnerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 2936985958359163180}
   - component: {fileID: 2513847685405125410}
   - component: {fileID: -1759595863630895823}
-  - component: {fileID: 8403191351406556983}
   - component: {fileID: 5655570682411480246}
   m_Layer: 0
   m_Name: Cell
@@ -194,18 +193,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8403191351406556983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6943029189837939306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e71394108192dc40aba54cc0c45d9b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5655570682411480246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,5 +205,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a78b487bf240d449c3629f2ad7ed47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  innerSprite: {fileID: 2148079084252550487}
-  size: 1
+  _innerSprite: {fileID: 2148079084252550487}
+  _size: 1
