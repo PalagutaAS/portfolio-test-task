@@ -1,7 +1,4 @@
 using System.Collections.Generic;
-using UnityEngine;
-using VContainer;
-using VContainer.Unity;
 
 public class CellsSpawner
 {
@@ -14,6 +11,7 @@ public class CellsSpawner
     public List<Cell> GetCells() => listCells;
     public CellsSpawner CreateCells(int count)
     {
+        listCells.Clear();
         for (int i = 0; i < count; i++)
         {
             listCells.Add(_factory.Create());

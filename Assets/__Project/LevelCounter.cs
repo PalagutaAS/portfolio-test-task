@@ -1,10 +1,19 @@
 public class LevelCounter
 {
     private int currentLevel = 1;
+    private readonly int maxLevel;
 
-    public int CurrentLevel { get => currentLevel; private set => currentLevel = value; }
+    public LevelCounter(GameSettings settings) 
+    {
+        maxLevel = settings.GetCountLevels;
+    }
+    public int CurrentLevel { get => currentLevel; }
+    public bool IsLastLevel { get => maxLevel == currentLevel; }
 
     public void GoToNextLevel() {
-        CurrentLevel++;
+        currentLevel++;
+    }
+    public void Restart() {
+        currentLevel = 1;
     }
 }

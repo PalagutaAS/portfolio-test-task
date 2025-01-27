@@ -11,18 +11,19 @@ public class AnswerProvider : IAnswerProvider
 {
     private readonly LevelCounter levelSwithcer;
     private readonly GameSettings gameSettings;
+    private readonly FindTextPanel findTextPanel;
 
     private int correntIndex;
     private List<int> incorrentIndexes;
     private List<int> tempCorrentIndexes;
 
-    public AnswerProvider(LevelCounter levelSwithcer, GameSettings gameSettings)
+    public AnswerProvider(LevelCounter levelSwithcer, GameSettings gameSettings, FindTextPanel findTextPanel)
     {
+        this.findTextPanel = findTextPanel;
         this.levelSwithcer = levelSwithcer;
         this.gameSettings = gameSettings;
         incorrentIndexes = new List<int>();
         tempCorrentIndexes = new List<int>();
-        CalculateVariants();
     }
 
     public int CorrentIndex { get => correntIndex; }
@@ -51,11 +52,14 @@ public class AnswerProvider : IAnswerProvider
         correntIndex = newIndex;
         tempCorrentIndexes.Add(correntIndex);
 
-        Debug.Log($"Выбранный индекс: {correntIndex}");
+        findTextPanel.SetNameFindObject(isp[correntIndex].Name);
+        
     }
     
     private void SelectInorrectIndexes()
     {
+        incorrentIndexes.Clear();
+
         LevelProperties lp = gameSettings.GetLevelData(levelSwithcer.CurrentLevel);
         IconSprites[] isp = lp.IconSprites;
         int allowedCountIncorect = (lp.Row * lp.Column) - 1;
@@ -75,10 +79,5 @@ public class AnswerProvider : IAnswerProvider
         while (allowedCountIncorect < possibleIndexes.Count);
 
         incorrentIndexes = possibleIndexes;
-
-        foreach (var item in incorrentIndexes)
-        {
-            Debug.Log($"Неправельный индекс: {item}");
-        }
     }
 }

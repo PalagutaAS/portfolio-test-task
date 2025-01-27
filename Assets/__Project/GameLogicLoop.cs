@@ -2,12 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using VContainer;
 
-
-
 public class GameLogicLoop : MonoBehaviour
 {
     private LevelCounter _levelCounter;
-
     private GameGrid _gameGrid;
     private GameSettings _settings;
     private LevelProperties _currentLevelData;
@@ -16,7 +13,7 @@ public class GameLogicLoop : MonoBehaviour
     private AnimateController _animateController;
 
     [Inject]
-    private void Constructor(LevelCounter levelSwithcer, AnswerProvider answerProvider, GameGrid gameGrid, GameSettings settings, CellsSpawner cellsSpawner, CellsFillService cellsFillService, AnimateController animateController) 
+    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, CellsSpawner cellsSpawner, CellsFillService cellsFillService, AnimateController animateController) 
     {
         _levelCounter = levelSwithcer;
         _gameGrid = gameGrid;
@@ -28,17 +25,37 @@ public class GameLogicLoop : MonoBehaviour
 
     private void Start()
     {
+        StartGame();
+    }
+
+    public void StartGame()
+    {
+        Restart();
+        _animateController.BounceAnimPlay(_gameGrid.transform, 0.3f);
+    }
+
+    private void Restart()
+    {
         _currentLevelData = _settings.GetLevelData(_levelCounter.CurrentLevel);
         int totalCells = _currentLevelData.Column * _currentLevelData.Row;
         _cellsSpawner.CreateCells(totalCells);
         List<Cell> fillCells = _cellsFillService.FillCells(_cellsSpawner.GetCells()).Shuffle();
         _gameGrid.GenerateGridByCells(fillCells);
-        _animateController.BounceAnimPlay(_gameGrid.transform, 0.3f);
     }
 
-    public void FoundCorrectAnswer()
+    public void CorrectAnswer()
     {
-        _levelCounter.GoToNextLevel();
-    }
+        if (!_levelCounter.IsLastLevel) 
+        {
+            //play ParticleSystem
+            _levelCounter.GoToNextLevel();
+            Restart();
+        } else
+        {
+            _levelCounter.Restart();
+            StartGame();
+            //EndGame();
+        }
 
+    }
 }

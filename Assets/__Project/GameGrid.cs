@@ -1,4 +1,3 @@
-using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
 using VContainer;
@@ -18,18 +17,22 @@ public class GameGrid : MonoBehaviour
     {
         _levelCounter = levelCounter;
         _gameSettings = gameSettings;
-        _levelConfig = _gameSettings.GetLevelData(levelCounter.CurrentLevel);
     }
 
-    public void GenerateGrid()
+    private void BindLevelConfig()
+    {
+        _levelConfig = _gameSettings.GetLevelData(_levelCounter.CurrentLevel);
+    }
+
+    private void ResetGrid()
     {
         ClearGrid();
-        Centering();
-        //GenerageGrid(this.gameSettings.GetLevelSpriteData(levelSwithcer.CurrentLevel));
+        BindLevelConfig();
     }
+
     public void GenerateGridByCells(List<Cell> cells)
     {
-        ClearGrid();
+        ResetGrid();
         Centering();
         GenerageGrid(_levelConfig, cells);
     }
