@@ -4,11 +4,9 @@ public class CellsFillService
 {
     private AnswerProvider _answerProvider;
     private LevelProperties _levelProperties;
-    //private GameSettings _gameSettings;
 
     public CellsFillService(AnswerProvider answerProvider, GameSettings gameSettings, LevelCounter levels)
     {
-        //_gameSettings = gameSettings;
         _answerProvider = answerProvider;
         _levelProperties = gameSettings.GetLevelData(levels.CurrentLevel);
     }

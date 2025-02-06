@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VContainer;
@@ -11,9 +12,10 @@ public class GameLogicLoop : MonoBehaviour
     private CellsSpawner _cellsSpawner;
     private CellsFillService _cellsFillService;
     private AnimateController _animateController;
+    private ParticleSystem _particle;
 
     [Inject]
-    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, CellsSpawner cellsSpawner, CellsFillService cellsFillService, AnimateController animateController) 
+    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, CellsSpawner cellsSpawner, CellsFillService cellsFillService, AnimateController animateController, ParticleSystem particle) 
     {
         _levelCounter = levelSwithcer;
         _gameGrid = gameGrid;
@@ -21,6 +23,7 @@ public class GameLogicLoop : MonoBehaviour
         _cellsSpawner = cellsSpawner;
         _cellsFillService = cellsFillService;
         _animateController = animateController;
+        _particle = particle;
     }
 
     private void Start()
@@ -47,15 +50,50 @@ public class GameLogicLoop : MonoBehaviour
     {
         if (!_levelCounter.IsLastLevel) 
         {
-            //play ParticleSystem
-            _levelCounter.GoToNextLevel();
-            Restart();
+            StartCoroutine(DoToNestLevel());
         } else
         {
-            _levelCounter.Restart();
-            StartGame();
-            //EndGame();
+            StartCoroutine(DoToFirstLevel());
         }
 
+    }
+
+    private IEnumerator DoToNestLevel()
+    {
+        _particle.Play();
+        float delay = 1f;
+        float elapsedTime = 0f;
+        while(elapsedTime < delay)
+        {   
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        _levelCounter.GoToNextLevel();
+        Restart();
+    }
+
+    private IEnumerator DoToFirstLevel()
+    {
+        _particle.Play();
+        float delay = 1f;
+        float elapsedTime = 0f;
+        while (elapsedTime < delay)
+        {
+            //play FaidOut
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        elapsedTime = 0f;
+        _levelCounter.Restart();
+
+        while (elapsedTime < delay)
+        {
+            //play FaidOut
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        StartGame();
+        //EndGame();
     }
 }

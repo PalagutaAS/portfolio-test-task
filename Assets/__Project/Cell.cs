@@ -29,7 +29,6 @@ public class Cell : MonoBehaviour
 
     public void OnMouseDown()
     {
-        //
         _answerTrakcer.TapToCell(this);
     }
 
