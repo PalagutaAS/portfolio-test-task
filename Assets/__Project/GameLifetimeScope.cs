@@ -9,7 +9,7 @@ public class GameLifetimeScope : LifetimeScope
     [SerializeField] private GameGrid gameGrid;
     [SerializeField] private GameLogicLoop gameLogicLoop;
     [SerializeField] private FindTextPanel findTextPanel;
-    [SerializeField] private ParticleSystem particle;
+    [SerializeField] private ParticleSystem prefabParticle;
 
     protected override void Configure(IContainerBuilder builder)
     {
@@ -20,7 +20,8 @@ public class GameLifetimeScope : LifetimeScope
         builder.Register<ISpawnerCells, CellsSpawner>(Lifetime.Scoped);
         builder.Register<ICellFillService, CellsFillService>(Lifetime.Scoped);
         builder.Register<ICreatableCell, CellFactory>(Lifetime.Scoped);
-        builder.RegisterInstance(particle);
+        builder.Register<IParticleService, ParticleService>(Lifetime.Scoped);
+        builder.RegisterInstance(prefabParticle);
         builder.RegisterInstance(gameLogicLoop);
         builder.RegisterInstance(gameSettings);
         builder.RegisterInstance(gameGrid);

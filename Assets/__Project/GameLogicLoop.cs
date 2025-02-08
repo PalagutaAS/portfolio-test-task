@@ -77,7 +77,6 @@ public class GameLogicLoop : MonoBehaviour
         float elapsedTime = 0f;
         while (elapsedTime < delay)
         {
-            //play FaidOut
             elapsedTime += Time.deltaTime;
             yield return null;
         }
@@ -86,11 +85,9 @@ public class GameLogicLoop : MonoBehaviour
 
         while (elapsedTime < delay)
         {
-            //play FaidOut
             elapsedTime += Time.deltaTime;
             yield return null;
         }
         StartGame();
-        //EndGame();
     }
 }
