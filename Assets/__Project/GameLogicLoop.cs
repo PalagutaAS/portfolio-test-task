@@ -12,10 +12,10 @@ public class GameLogicLoop : MonoBehaviour
     private ISpawnerCells _cellsSpawner;
     private ICellFillService _cellsFillService;
     private IAnimatable _animateController;
-    private ParticleSystem _particle;
+    
 
     [Inject]
-    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, ISpawnerCells cellsSpawner, ICellFillService cellsFillService, IAnimatable animateController, ParticleSystem particle) 
+    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, ISpawnerCells cellsSpawner, ICellFillService cellsFillService, IAnimatable animateController) 
     {
         _levelCounter = levelSwithcer;
         _gameGrid = gameGrid;
@@ -23,7 +23,6 @@ public class GameLogicLoop : MonoBehaviour
         _cellsSpawner = cellsSpawner;
         _cellsFillService = cellsFillService;
         _animateController = animateController;
-        _particle = particle;
     }
 
     private void Start()
@@ -60,7 +59,6 @@ public class GameLogicLoop : MonoBehaviour
 
     private IEnumerator DoToNestLevel()
     {
-        _particle.Play();
         float delay = 1f;
         float elapsedTime = 0f;
         while(elapsedTime < delay)
@@ -75,7 +73,6 @@ public class GameLogicLoop : MonoBehaviour
 
     private IEnumerator DoToFirstLevel()
     {
-        _particle.Play();
         float delay = 1f;
         float elapsedTime = 0f;
         while (elapsedTime < delay)
