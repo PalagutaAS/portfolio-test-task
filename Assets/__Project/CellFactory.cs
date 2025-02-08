@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
+public interface ICreatableCell
+{
+    public Cell Create();
+}
 
-public class CellFactory
+public class CellFactory : ICreatableCell
 {
     private readonly Cell _cellPrefab;
     private readonly IObjectResolver _resolver;

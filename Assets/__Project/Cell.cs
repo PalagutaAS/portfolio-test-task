@@ -1,9 +1,5 @@
 using UnityEngine;
 using VContainer;
-public interface IClickable
-{
-    void OnClick();
-}
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Cell : MonoBehaviour
@@ -15,6 +11,7 @@ public class Cell : MonoBehaviour
     [SerializeField] private float _size = 1;
 
     private bool _isCorrect;
+    private bool _isEnabledTap = true;
 
     public float Size { get => _size; }
     public Transform InnerSpriteTransform { get => _innerSprite.transform; }
@@ -22,14 +19,22 @@ public class Cell : MonoBehaviour
 
     public Cell Constructor(Sprite innerSprite, bool isCorrect)
     {
-        this._isCorrect = isCorrect;
-        this._innerSprite.sprite = innerSprite;
+        _isCorrect = isCorrect;
+        _innerSprite.sprite = innerSprite;
+        var spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = Color.HSVToRGB(Random.value, 0.32f, 1f);
         return this;
     }
-
     public void OnMouseDown()
     {
-        _answerTrakcer.TapToCell(this);
+        if (_isEnabledTap)
+        {
+            _answerTrakcer.TapToCell(this);
+        }
     }
 
+    public void DisabledTap()
+    {
+        _isEnabledTap = false;
+    }
 }

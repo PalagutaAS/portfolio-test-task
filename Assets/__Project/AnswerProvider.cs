@@ -5,29 +5,30 @@ public interface IAnswerProvider
 {
     public int CorrentIndex { get; }
     public List<int> IncorrentIndexes { get; }
+    public void CalculateVariants();
 }
 
 public class AnswerProvider : IAnswerProvider
 {
-    private readonly LevelCounter levelSwithcer;
-    private readonly GameSettings gameSettings;
-    private readonly FindTextPanel findTextPanel;
+    private readonly LevelCounter _levelSwithcer;
+    private readonly GameSettings _gameSettings;
+    private readonly FindTextPanel _findTextPanel;
 
-    private int correntIndex;
-    private List<int> incorrentIndexes;
-    private List<int> tempCorrentIndexes;
+    private int _correntIndex;
+    private List<int> _incorrentIndexes;
+    private List<int> _tempCorrentIndexes;
 
     public AnswerProvider(LevelCounter levelSwithcer, GameSettings gameSettings, FindTextPanel findTextPanel)
     {
-        this.findTextPanel = findTextPanel;
-        this.levelSwithcer = levelSwithcer;
-        this.gameSettings = gameSettings;
-        incorrentIndexes = new List<int>();
-        tempCorrentIndexes = new List<int>();
+        _findTextPanel = findTextPanel;
+        _levelSwithcer = levelSwithcer;
+        _gameSettings = gameSettings;
+        _incorrentIndexes = new List<int>();
+        _tempCorrentIndexes = new List<int>();
     }
 
-    public int CorrentIndex { get => correntIndex; }
-    public List<int> IncorrentIndexes { get => incorrentIndexes; }
+    public int CorrentIndex { get => _correntIndex; }
+    public List<int> IncorrentIndexes { get => _incorrentIndexes; }
 
     public void CalculateVariants()
     {
@@ -37,30 +38,30 @@ public class AnswerProvider : IAnswerProvider
 
     private void SelectCorrectIndex()
     {
-        LevelProperties lp = gameSettings.GetLevelData(levelSwithcer.CurrentLevel);
+        LevelProperties lp = _gameSettings.GetLevelData(_levelSwithcer.CurrentLevel);
         IconSprites[] isp = lp.IconSprites;
 
-        bool notUniqueIndex = tempCorrentIndexes.Count < isp.Length;
+        bool notUniqueIndex = _tempCorrentIndexes.Count < isp.Length;
 
         int newIndex;
         do
         {
             newIndex = Random.Range(0, isp.Length);
         }
-        while (tempCorrentIndexes.Contains(newIndex) && notUniqueIndex);
+        while (_tempCorrentIndexes.Contains(newIndex) && notUniqueIndex);
 
-        correntIndex = newIndex;
-        tempCorrentIndexes.Add(correntIndex);
+        _correntIndex = newIndex;
+        _tempCorrentIndexes.Add(_correntIndex);
 
-        findTextPanel.SetNameFindObject(isp[correntIndex].Name);
+        _findTextPanel.SetNameFindObject(isp[_correntIndex].Name);
         
     }
     
     private void SelectInorrectIndexes()
     {
-        incorrentIndexes.Clear();
+        _incorrentIndexes.Clear();
 
-        LevelProperties lp = gameSettings.GetLevelData(levelSwithcer.CurrentLevel);
+        LevelProperties lp = _gameSettings.GetLevelData(_levelSwithcer.CurrentLevel);
         IconSprites[] isp = lp.IconSprites;
         int allowedCountIncorect = (lp.Row * lp.Column) - 1;
         List<int> possibleIndexes = new List<int>();
@@ -68,16 +69,15 @@ public class AnswerProvider : IAnswerProvider
         {
             possibleIndexes.Add(i);
         }
-        possibleIndexes.Remove(correntIndex);
+        possibleIndexes.Remove(_correntIndex);
 
         int newIndex;
-        do
+        while (allowedCountIncorect < possibleIndexes.Count)
         {
             newIndex = Random.Range(0, possibleIndexes.Count);
             possibleIndexes.RemoveAt(newIndex);
         }
-        while (allowedCountIncorect < possibleIndexes.Count);
 
-        incorrentIndexes = possibleIndexes;
+        _incorrentIndexes = possibleIndexes;
     }
 }

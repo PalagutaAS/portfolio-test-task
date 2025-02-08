@@ -1,11 +1,16 @@
 using System.Collections.Generic;
 
-public class CellsFillService
+public interface ICellFillService
 {
-    private AnswerProvider _answerProvider;
+    public List<Cell> FillCells(List<Cell> cells);
+}
+
+public class CellsFillService : ICellFillService
+{
+    private IAnswerProvider _answerProvider;
     private LevelProperties _levelProperties;
 
-    public CellsFillService(AnswerProvider answerProvider, GameSettings gameSettings, LevelCounter levels)
+    public CellsFillService(IAnswerProvider answerProvider, GameSettings gameSettings, LevelCounter levels)
     {
         _answerProvider = answerProvider;
         _levelProperties = gameSettings.GetLevelData(levels.CurrentLevel);

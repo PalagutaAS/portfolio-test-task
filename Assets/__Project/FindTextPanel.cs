@@ -7,6 +7,7 @@ public class FindTextPanel : MonoBehaviour
     
     public void SetNameFindObject(string nameFindObject)
     {
-        text.text = "Find " + nameFindObject;
+        nameFindObject = "Find " + nameFindObject;
+        text.text = nameFindObject;
     }
 }

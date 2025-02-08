@@ -9,13 +9,13 @@ public class GameLogicLoop : MonoBehaviour
     private GameGrid _gameGrid;
     private GameSettings _settings;
     private LevelProperties _currentLevelData;
-    private CellsSpawner _cellsSpawner;
-    private CellsFillService _cellsFillService;
-    private AnimateController _animateController;
+    private ISpawnerCells _cellsSpawner;
+    private ICellFillService _cellsFillService;
+    private IAnimatable _animateController;
     private ParticleSystem _particle;
 
     [Inject]
-    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, CellsSpawner cellsSpawner, CellsFillService cellsFillService, AnimateController animateController, ParticleSystem particle) 
+    private void Constructor(LevelCounter levelSwithcer, GameGrid gameGrid, GameSettings settings, ISpawnerCells cellsSpawner, ICellFillService cellsFillService, IAnimatable animateController, ParticleSystem particle) 
     {
         _levelCounter = levelSwithcer;
         _gameGrid = gameGrid;

@@ -4,11 +4,9 @@
 
 public class GameSettings : ScriptableObject
 {
-    [SerializeField] private LevelProperties[] properties;
+    [SerializeField] private LevelProperties[] _properties;
 
-    public int GetCountLevels { get => properties.Length; }
-    public LevelProperties GetLevelData(int level)
-    {
-        return properties?[level - 1];
-    }
+    public int GetCountLevels { get => _properties.Length; }
+    public LevelProperties GetLevelData(int level) => _properties?[level - 1];
+    
 }

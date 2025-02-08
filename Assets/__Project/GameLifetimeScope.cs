@@ -13,13 +13,13 @@ public class GameLifetimeScope : LifetimeScope
 
     protected override void Configure(IContainerBuilder builder)
     {
-        builder.Register<IAnswerTrakcer, CorrectAnswerTracker>(Lifetime.Transient);
         builder.Register<LevelCounter>(Lifetime.Singleton);
-        builder.Register<AnswerProvider>(Lifetime.Scoped);
-        builder.Register<AnimateController>(Lifetime.Transient);
-        builder.Register<CellsSpawner>(Lifetime.Scoped);
-        builder.Register<CellsFillService>(Lifetime.Scoped);
-        builder.Register<CellFactory>(Lifetime.Scoped);
+        builder.Register<IAnswerTrakcer, CorrectAnswerTracker>(Lifetime.Transient);
+        builder.Register<IAnswerProvider, AnswerProvider>(Lifetime.Scoped);
+        builder.Register<IAnimatable, AnimateController>(Lifetime.Transient);
+        builder.Register<ISpawnerCells, CellsSpawner>(Lifetime.Scoped);
+        builder.Register<ICellFillService, CellsFillService>(Lifetime.Scoped);
+        builder.Register<ICreatableCell, CellFactory>(Lifetime.Scoped);
         builder.RegisterInstance(particle);
         builder.RegisterInstance(gameLogicLoop);
         builder.RegisterInstance(gameSettings);

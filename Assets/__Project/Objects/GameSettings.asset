@@ -12,13 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5a034f3c6a30c479da49ccced50c76, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  properties:
+  _properties:
   - row: 3
     column: 1
-    spriteData: {fileID: 11400000, guid: 97d4173c7e7da174ea85c4a9ef836cf1, type: 2}
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}
   - row: 3
     column: 2
-    spriteData: {fileID: 11400000, guid: 97d4173c7e7da174ea85c4a9ef836cf1, type: 2}
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}
   - row: 3
     column: 3
-    spriteData: {fileID: 11400000, guid: 97d4173c7e7da174ea85c4a9ef836cf1, type: 2}
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}
+  - row: 4
+    column: 3
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}
+  - row: 4
+    column: 4
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}

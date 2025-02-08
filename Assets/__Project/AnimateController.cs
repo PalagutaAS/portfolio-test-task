@@ -1,7 +1,13 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class AnimateController
+public interface IAnimatable
+{
+    public void WrongAnimPlay(Transform transform);
+    public void BounceAnimPlay(Transform transform, float delay = 0.5f);
+}
+
+public class AnimateController : IAnimatable
 {
     private Transform _fromShake;
     private Transform _fromBounce;
