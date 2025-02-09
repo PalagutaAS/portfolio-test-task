@@ -10,6 +10,7 @@ public class Cell : MonoBehaviour
     [SerializeField] private SpriteRenderer _innerSprite;
     [SerializeField] private float _size = 1;
 
+    private SpriteRenderer _sprite;
     private bool _isCorrect;
     private bool _isEnabledTap = true;
 
@@ -17,12 +18,16 @@ public class Cell : MonoBehaviour
     public Transform InnerSpriteTransform { get => _innerSprite.transform; }
     public bool IsCorrect { get => _isCorrect; }
 
+    private void Awake()
+    {
+        _sprite = GetComponent<SpriteRenderer>();
+    }
+
     public Cell Constructor(Sprite innerSprite, bool isCorrect)
     {
         _isCorrect = isCorrect;
         _innerSprite.sprite = innerSprite;
-        var spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.HSVToRGB(Random.value, 0.32f, 1f);
+        _sprite.color = Color.HSVToRGB(Random.value, 0.32f, 1f);
         return this;
     }
     public void OnMouseDown()

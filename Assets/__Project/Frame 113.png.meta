@@ -16,22 +16,22 @@ TextureImporter:
     second: giraffe
   - first:
       213: -716977565579052951
-    second: Frame 113_4
+    second: word A
   - first:
       213: -1453810570722093456
-    second: Frame 113_5
+    second: word B
   - first:
       213: -3736131854613499244
-    second: Frame 113_6
+    second: word C
   - first:
       213: 9107245758376232381
-    second: Frame 113_7
+    second: word D
   - first:
       213: -2261341414749923349
-    second: Frame 113_8
+    second: word E
   - first:
       213: -7503048149569725683
-    second: Frame 113_9
+    second: word F
   - first:
       213: 8803134438204027881
     second: rabbit
@@ -46,22 +46,22 @@ TextureImporter:
     second: sheep
   - first:
       213: 6531625211529711143
-    second: Frame 113_14
+    second: word G
   - first:
       213: 3140659525181158803
-    second: Frame 113_15
+    second: word H
   - first:
       213: -6281116259818560195
-    second: Frame 113_16
+    second: word I
   - first:
       213: -1113093284715858569
-    second: Frame 113_17
+    second: word J
   - first:
       213: 3411194009088297025
-    second: Frame 113_18
+    second: word K
   - first:
       213: -3017855780834157170
-    second: Frame 113_19
+    second: word L
   - first:
       213: -847026634072928630
     second: snail
@@ -76,22 +76,22 @@ TextureImporter:
     second: pig
   - first:
       213: 5652582396225936787
-    second: Frame 113_24
+    second: word M
   - first:
       213: -7284358450296535195
-    second: Frame 113_25
+    second: word N
   - first:
       213: 4879635686412329561
-    second: Frame 113_26
+    second: word O
   - first:
       213: -7244482323389871148
-    second: Frame 113_27
+    second: word P
   - first:
       213: -2958731576971845639
-    second: Frame 113_28
+    second: Word Q
   - first:
       213: 2122342966396673548
-    second: Frame 113_29
+    second: word R
   - first:
       213: -3626569214249384046
     second: bear
@@ -106,34 +106,37 @@ TextureImporter:
     second: fox
   - first:
       213: -1706258100852043968
-    second: Frame 113_34
+    second: word S
   - first:
       213: -8794257513110759122
-    second: Frame 113_35
+    second: word T
   - first:
       213: 5231505762582394716
-    second: Frame 113_36
+    second: word U
   - first:
       213: -7957009950946629912
-    second: Frame 113_37
+    second: word V
   - first:
       213: -8254024594463499482
-    second: Frame 113_38
+    second: word W
   - first:
       213: -5628066015477362033
-    second: Frame 113_39
+    second: word X
   - first:
       213: -4211684039734212376
     second: star
   - first:
       213: -3019578262835028543
-    second: Frame 113_41
+    second: word Y
   - first:
       213: -1041267489841736579
-    second: Frame 113_42
+    second: word Z
   - first:
       213: 3942869940063739085
     second: Frame
+  - first:
+      213: 8421900135528184309
+    second: border
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -331,13 +334,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_4
+      name: word A
       rect:
         serializedVersion: 2
-        x: 842
-        y: 1892
-        width: 111
-        height: 106
+        x: 822
+        y: 1871
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,13 +355,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_5
+      name: word B
       rect:
         serializedVersion: 2
-        x: 1009
-        y: 1891
-        width: 109
-        height: 115
+        x: 992
+        y: 1869
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,13 +376,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_6
+      name: word C
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 1898
-        width: 110
-        height: 113
+        x: 1151
+        y: 1871
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,13 +397,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_7
+      name: word D
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 1900
-        width: 116
-        height: 98
+        x: 1306
+        y: 1874
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,13 +418,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_8
+      name: word E
       rect:
         serializedVersion: 2
-        x: 1487
-        y: 1894
-        width: 100
-        height: 104
+        x: 1472
+        y: 1875
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,13 +439,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_9
+      name: word F
       rect:
         serializedVersion: 2
-        x: 1656
-        y: 1900
-        width: 88
-        height: 129
+        x: 1622
+        y: 1884
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,13 +544,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_14
+      name: word G
       rect:
         serializedVersion: 2
-        x: 865
-        y: 1695
-        width: 108
-        height: 118
+        x: 840
+        y: 1682
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,13 +565,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_15
+      name: word H
       rect:
         serializedVersion: 2
-        x: 1013
-        y: 1704
-        width: 116
-        height: 105
+        x: 995
+        y: 1685
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,13 +586,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_16
+      name: word I
       rect:
         serializedVersion: 2
-        x: 1194
-        y: 1713
-        width: 54
-        height: 98
+        x: 1152
+        y: 1684
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,13 +607,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_17
+      name: word J
       rect:
         serializedVersion: 2
-        x: 1352
-        y: 1690
-        width: 78
-        height: 121
+        x: 1315
+        y: 1679
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,13 +628,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_18
+      name: word K
       rect:
         serializedVersion: 2
-        x: 1492
-        y: 1713
-        width: 103
-        height: 98
+        x: 1465
+        y: 1687
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,13 +649,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_19
+      name: word L
       rect:
         serializedVersion: 2
-        x: 1649
-        y: 1712
-        width: 94
-        height: 99
+        x: 1622
+        y: 1686
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,13 +754,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_24
+      name: word M
       rect:
         serializedVersion: 2
-        x: 856
-        y: 1524
-        width: 119
-        height: 100
+        x: 838
+        y: 1501
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,13 +775,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_25
+      name: word N
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 1516
-        width: 117
-        height: 108
+        x: 1001
+        y: 1500
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,13 +796,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_26
+      name: word O
       rect:
         serializedVersion: 2
-        x: 1187
-        y: 1523
-        width: 91
-        height: 103
+        x: 1160
+        y: 1500
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,13 +817,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_27
+      name: word P
       rect:
         serializedVersion: 2
-        x: 1342
-        y: 1524
-        width: 88
-        height: 99
+        x: 1306
+        y: 1501
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,13 +838,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_28
+      name: Word Q
       rect:
         serializedVersion: 2
-        x: 1502
-        y: 1496
-        width: 103
-        height: 131
+        x: 1475
+        y: 1489
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -856,13 +859,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_29
+      name: word R
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1524
-        width: 110
-        height: 100
+        x: 1640
+        y: 1500
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,13 +964,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_34
+      name: word S
       rect:
         serializedVersion: 2
-        x: 866
-        y: 1318
-        width: 72
-        height: 121
+        x: 826
+        y: 1307
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,13 +985,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_35
+      name: word T
       rect:
         serializedVersion: 2
-        x: 1018
-        y: 1338
-        width: 83
-        height: 98
+        x: 987
+        y: 1316
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,13 +1006,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_36
+      name: word U
       rect:
         serializedVersion: 2
-        x: 1174
-        y: 1336
-        width: 96
-        height: 100
+        x: 1151
+        y: 1315
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,13 +1027,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_37
+      name: word V
       rect:
         serializedVersion: 2
-        x: 1335
-        y: 1328
-        width: 97
-        height: 108
+        x: 1310
+        y: 1313
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1045,13 +1048,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_38
+      name: word W
       rect:
         serializedVersion: 2
-        x: 1476
-        y: 1337
-        width: 137
-        height: 99
+        x: 1470
+        y: 1314
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1066,13 +1069,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_39
+      name: word X
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 1339
-        width: 104
-        height: 97
+        x: 1627
+        y: 1314
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,13 +1111,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_41
+      name: word Y
       rect:
         serializedVersion: 2
-        x: 1179
-        y: 1151
-        width: 88
-        height: 98
+        x: 1145
+        y: 1128
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1129,13 +1132,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame 113_42
+      name: word Z
       rect:
         serializedVersion: 2
-        x: 1324
-        y: 1151
-        width: 96
-        height: 98
+        x: 1297
+        y: 1126
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,6 +1169,27 @@ TextureImporter:
       bones: []
       spriteID: dcc901df153e7b630800000000000000
       internalID: 3942869940063739085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: border
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 47
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9b8f75d8990e470800000000000000
+      internalID: 8421900135528184309
       vertices: []
       indices: 
       edges: []
