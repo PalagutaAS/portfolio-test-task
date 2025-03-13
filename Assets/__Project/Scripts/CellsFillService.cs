@@ -27,7 +27,7 @@ public class CellsFillService : ICellFillService
             int indexSprite = (i == 0) ? _answerProvider.CorrentIndex : _answerProvider.IncorrentIndexes[j];
             bool isCorrect = (i == 0);
 
-            cells[i].Constructor(levelProperties.IconSprites[indexSprite].Sprite, isCorrect);
+            cells[i].Constructor(levelProperties.IconSprites[indexSprite].Sprite, isCorrect, levelProperties.CellSize);
         }
 
         return cells;

@@ -8,13 +8,11 @@ public class Cell : MonoBehaviour
     private readonly IAnswerTrakcer _answerTrakcer;
 
     [SerializeField] private SpriteRenderer _innerSprite;
-    [SerializeField] private float _size = 1;
 
     private SpriteRenderer _sprite;
     private bool _isCorrect;
     private bool _isEnabledTap = true;
-
-    public float Size { get => _size; }
+    
     public Transform InnerSpriteTransform { get => _innerSprite.transform; }
     public bool IsCorrect { get => _isCorrect; }
 
@@ -23,11 +21,12 @@ public class Cell : MonoBehaviour
         _sprite = GetComponent<SpriteRenderer>();
     }
 
-    public Cell Constructor(Sprite innerSprite, bool isCorrect)
+    public Cell Constructor(Sprite innerSprite, bool isCorrect, float cellSize)
     {
         _isCorrect = isCorrect;
         _innerSprite.sprite = innerSprite;
         _sprite.color = Color.HSVToRGB(Random.value, 0.32f, 1f);
+        transform.localScale = new Vector2(cellSize, cellSize);
         return this;
     }
     public void OnMouseDown()

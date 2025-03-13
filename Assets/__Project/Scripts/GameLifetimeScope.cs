@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GameLifetimeScope : LifetimeScope
 {
-    [SerializeField] private Cell prefab;
-    [SerializeField] private GameSettings gameSettings;
-    [SerializeField] private GameGrid gameGrid;
-    [SerializeField] private GameLogicLoop gameLogicLoop;
-    [SerializeField] private FindTextPanel findTextPanel;
-    [SerializeField] private ParticleSystem prefabParticle;
+    [SerializeField] private Cell _prefab;
+    [SerializeField] private GameSettings _gameSettings;
+    [SerializeField] private GameGrid _gameGrid;
+    [SerializeField] private GameLogicLoop _gameLogicLoop;
+    [SerializeField] private FindTextPanel _findTextPanel;
+    [SerializeField] private ParticleSystem _prefabParticle;
 
     protected override void Configure(IContainerBuilder builder)
     {
@@ -21,12 +21,12 @@ public class GameLifetimeScope : LifetimeScope
         builder.Register<ICellFillService, CellsFillService>(Lifetime.Scoped);
         builder.Register<ICreatableCell, CellFactory>(Lifetime.Scoped);
         builder.Register<IParticleService, ParticleService>(Lifetime.Scoped);
-        builder.RegisterInstance(prefabParticle);
-        builder.RegisterInstance(gameLogicLoop);
-        builder.RegisterInstance(gameSettings);
-        builder.RegisterInstance(gameGrid);
-        builder.RegisterInstance(prefab);
-        builder.RegisterInstance(findTextPanel);
+        builder.RegisterInstance(_prefabParticle);
+        builder.RegisterInstance(_gameLogicLoop);
+        builder.RegisterInstance(_gameSettings);
+        builder.RegisterInstance(_gameGrid);
+        builder.RegisterInstance(_prefab);
+        builder.RegisterInstance(_findTextPanel);
 
     }
 }

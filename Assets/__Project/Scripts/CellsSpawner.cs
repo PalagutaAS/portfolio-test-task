@@ -9,7 +9,7 @@ public interface ISpawnerCells
 public class CellsSpawner : ISpawnerCells
 {
     private readonly ICreatableCell _factory;
-    private List<Cell> _listCells = new List<Cell>();
+    private List<Cell> _listCells = new();
     public CellsSpawner(ICreatableCell factory)
     {
         _factory = factory;

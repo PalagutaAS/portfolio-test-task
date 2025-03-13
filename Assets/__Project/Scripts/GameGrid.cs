@@ -9,9 +9,7 @@ public class GameGrid : MonoBehaviour
     private LevelProperties _levelConfig;
 
     private Dictionary<Vector2Int, Cell> _cells = new Dictionary<Vector2Int, Cell>();
-
-    public Dictionary<Vector2Int, Cell> Cells { get => _cells; }
-
+    
     [Inject] 
     private void Constructor(LevelCounter levelCounter, GameSettings gameSettings)
     {
@@ -33,11 +31,11 @@ public class GameGrid : MonoBehaviour
     public void GenerateGridByCells(List<Cell> cells)
     {
         ResetGrid();
-        Centering();
-        GenerageGrid(_levelConfig, cells);
+        Centering(_levelConfig);
+        GenerateGrid(_levelConfig, cells);
     }
 
-    private void GenerageGrid(LevelProperties levelConfig, List<Cell> cells)
+    private void GenerateGrid(LevelProperties levelConfig, List<Cell> cells)
     {
         int i = 0;
         for (int x = 0; x < levelConfig.Row; x++)
@@ -45,17 +43,22 @@ public class GameGrid : MonoBehaviour
             for (int y = 0; y < levelConfig.Column; y++)
             {
                 Vector2Int positionInGrid = new Vector2Int(x, y);
+                var cell = cells[i];
                 _cells.Add(positionInGrid, cells[i]);
-                cells[i].transform.SetParent(transform, false);
-                cells[i].gameObject.transform.localPosition = GetWorldPosition(positionInGrid, levelConfig);
+                cell.transform.SetParent(transform, false);
+                cell.gameObject.transform.localPosition = GetWorldPosition(positionInGrid, levelConfig);
                 i++;
             }
         }
     }
 
-    public void Centering()
+    public void Centering(LevelProperties levelConfig)
     {
-        transform.position = Vector3.zero;
+        float healthCellSize = levelConfig.CellSize / 2f;
+        float offsetX = -((levelConfig.Row / 2f) * levelConfig.CellSize - healthCellSize);
+        float offsetY = ((levelConfig.Column / 2f) * levelConfig.CellSize - healthCellSize);
+
+        transform.position = new Vector2(offsetX, offsetY);
     }
 
     private void ClearGrid()
@@ -69,12 +72,9 @@ public class GameGrid : MonoBehaviour
 
     private Vector3 GetWorldPosition(Vector2Int positionOnGrid, LevelProperties levelConfig)
     {
-        float cellSize = 1f;
-        float halthCellSize = cellSize / 2f;
-        float offsetX = ((levelConfig.Row / 2f) - halthCellSize) * cellSize;
-        float offsetY = ((levelConfig.Column / 2f) - halthCellSize) * cellSize;
-
-        return new Vector2((positionOnGrid.x * cellSize) - offsetX, -(positionOnGrid.y * cellSize) + offsetY);
+        float cellSize = levelConfig.CellSize;
+        Vector2 qwe = new Vector2(positionOnGrid.x * cellSize, -(positionOnGrid.y * cellSize));
+        return qwe;
     }
 
 }

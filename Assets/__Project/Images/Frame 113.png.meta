@@ -138,7 +138,7 @@ TextureImporter:
       213: 8421900135528184309
     second: border
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -159,6 +159,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -197,6 +198,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1204,6 +1206,52 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Frame: 3942869940063739085
+      Word Q: -2958731576971845639
+      bear: -3626569214249384046
+      border: 8421900135528184309
+      cat: 7852930802937218546
+      cow: -8242969605018649909
+      dog: 7114363673023209258
+      dragon: -4800471374985160678
+      fox: 6941370824643903497
+      giraffe: -4905377164422158367
+      hippopotamus: -6724067394354698343
+      horse: 5249066362984795658
+      leon: 6436037508085582259
+      mouse: 843248469247221362
+      pig: -6923718680452036062
+      rabbit: 8803134438204027881
+      sheep: 5024267125671663773
+      snail: -847026634072928630
+      snake: 237437369437867433
+      star: -4211684039734212376
+      word A: -716977565579052951
+      word B: -1453810570722093456
+      word C: -3736131854613499244
+      word D: 9107245758376232381
+      word E: -2261341414749923349
+      word F: -7503048149569725683
+      word G: 6531625211529711143
+      word H: 3140659525181158803
+      word I: -6281116259818560195
+      word J: -1113093284715858569
+      word K: 3411194009088297025
+      word L: -3017855780834157170
+      word M: 5652582396225936787
+      word N: -7284358450296535195
+      word O: 4879635686412329561
+      word P: -7244482323389871148
+      word R: 2122342966396673548
+      word S: -1706258100852043968
+      word T: -8794257513110759122
+      word U: 5231505762582394716
+      word V: -7957009950946629912
+      word W: -8254024594463499482
+      word X: -5628066015477362033
+      word Y: -3019578262835028543
+      word Z: -1041267489841736579
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
