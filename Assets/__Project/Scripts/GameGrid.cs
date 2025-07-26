@@ -31,7 +31,6 @@ public class GameGrid : MonoBehaviour
     public void GenerateGridByCells(List<Cell> cells)
     {
         ResetGrid();
-        Centering(_levelConfig);
         GenerateGrid(_levelConfig, cells);
     }
 
@@ -52,15 +51,6 @@ public class GameGrid : MonoBehaviour
         }
     }
 
-    public void Centering(LevelProperties levelConfig)
-    {
-        float healthCellSize = levelConfig.CellSize / 2f;
-        float offsetX = -((levelConfig.Row / 2f) * levelConfig.CellSize - healthCellSize);
-        float offsetY = ((levelConfig.Column / 2f) * levelConfig.CellSize - healthCellSize);
-
-        transform.position = new Vector2(offsetX, offsetY);
-    }
-
     private void ClearGrid()
     {
         foreach (var item in _cells)
@@ -73,8 +63,15 @@ public class GameGrid : MonoBehaviour
     private Vector3 GetWorldPosition(Vector2Int positionOnGrid, LevelProperties levelConfig)
     {
         float cellSize = levelConfig.CellSize;
-        Vector2 qwe = new Vector2(positionOnGrid.x * cellSize, -(positionOnGrid.y * cellSize));
-        return qwe;
+        int gridWidth =  levelConfig.Row; 
+        int gridHeight = levelConfig.Column;
+        
+        float offsetX = -gridWidth * cellSize / 2 + cellSize / 2;
+        float offsetY = gridHeight * cellSize / 2 - cellSize / 2;
+        
+        float x = positionOnGrid.x * cellSize + offsetX;
+        float y = -positionOnGrid.y * cellSize + offsetY;
+        return new Vector3(x, y, 0);
     }
 
 }

@@ -49,7 +49,7 @@ public class GameLogicLoop : MonoBehaviour
     {
         if (!_levelCounter.IsLastLevel) 
         {
-            StartCoroutine(DoToNestLevel());
+            StartCoroutine(DoToNextLevel());
         } else
         {
             StartCoroutine(DoToFirstLevel());
@@ -57,7 +57,7 @@ public class GameLogicLoop : MonoBehaviour
 
     }
 
-    private IEnumerator DoToNestLevel()
+    private IEnumerator DoToNextLevel()
     {
         float delay = 1f;
         float elapsedTime = 0f;
