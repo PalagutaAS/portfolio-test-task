@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a034f3c6a30c479da49ccced50c76, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  _properties:
+  - row: 3
+    column: 1
+    cellSize: 2.5
+    spriteData: {fileID: 11400000, guid: 5e8683a6382757c4f85b6914834785df, type: 2}
+  - row: 3
+    column: 2
+    cellSize: 2.3
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}
+  - row: 3
+    column: 3
+    cellSize: 2
+    spriteData: {fileID: 11400000, guid: 5e8683a6382757c4f85b6914834785df, type: 2}
+  - row: 4
+    column: 3
+    cellSize: 1.7
+    spriteData: {fileID: 11400000, guid: 1dee1683d49507b4aab8b41e774cdcec, type: 2}
+  - row: 4
+    column: 4
+    cellSize: 1.4
+    spriteData: {fileID: 11400000, guid: 5e8683a6382757c4f85b6914834785df, type: 2}

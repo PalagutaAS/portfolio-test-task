@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2c0487662b5d140bf82ca6514ef2ac, type: 3}
+  m_Name: SpriteDataAnimals
+  m_EditorClassIdentifier: 
+  iconSprites:
+  - sprite: {fileID: -3626569214249384046, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Bear
+  - sprite: {fileID: 7852930802937218546, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Cat
+  - sprite: {fileID: -847026634072928630, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Snail
+  - sprite: {fileID: 8803134438204027881, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Rabbit
+  - sprite: {fileID: 7114363673023209258, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Dog
+  - sprite: {fileID: 843248469247221362, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Mouse
+  - sprite: {fileID: -4800471374985160678, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Dragon
+  - sprite: {fileID: -6923718680452036062, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Pig
+  - sprite: {fileID: 237437369437867433, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Snake
+  - sprite: {fileID: -6724067394354698343, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Hippopotamus
+  - sprite: {fileID: -8242969605018649909, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Cow
+  - sprite: {fileID: 5249066362984795658, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Horse
+  - sprite: {fileID: 6436037508085582259, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Leon
+  - sprite: {fileID: -4905377164422158367, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Giraffe
+  - sprite: {fileID: 5024267125671663773, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Sheep
+  - sprite: {fileID: 6941370824643903497, guid: 0f0c9ae6ad8540841888d5fd7161a6f1, type: 3}
+    name: Fox

@@ -1,0 +1,1260 @@
+fileFormatVersion: 2
+guid: 0f0c9ae6ad8540841888d5fd7161a6f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7852930802937218546
+    second: cat
+  - first:
+      213: 7114363673023209258
+    second: dog
+  - first:
+      213: -6724067394354698343
+    second: hippopotamus
+  - first:
+      213: -4905377164422158367
+    second: giraffe
+  - first:
+      213: -716977565579052951
+    second: word A
+  - first:
+      213: -1453810570722093456
+    second: word B
+  - first:
+      213: -3736131854613499244
+    second: word C
+  - first:
+      213: 9107245758376232381
+    second: word D
+  - first:
+      213: -2261341414749923349
+    second: word E
+  - first:
+      213: -7503048149569725683
+    second: word F
+  - first:
+      213: 8803134438204027881
+    second: rabbit
+  - first:
+      213: -8242969605018649909
+    second: cow
+  - first:
+      213: 843248469247221362
+    second: mouse
+  - first:
+      213: 5024267125671663773
+    second: sheep
+  - first:
+      213: 6531625211529711143
+    second: word G
+  - first:
+      213: 3140659525181158803
+    second: word H
+  - first:
+      213: -6281116259818560195
+    second: word I
+  - first:
+      213: -1113093284715858569
+    second: word J
+  - first:
+      213: 3411194009088297025
+    second: word K
+  - first:
+      213: -3017855780834157170
+    second: word L
+  - first:
+      213: -847026634072928630
+    second: snail
+  - first:
+      213: -4800471374985160678
+    second: dragon
+  - first:
+      213: 5249066362984795658
+    second: horse
+  - first:
+      213: -6923718680452036062
+    second: pig
+  - first:
+      213: 5652582396225936787
+    second: word M
+  - first:
+      213: -7284358450296535195
+    second: word N
+  - first:
+      213: 4879635686412329561
+    second: word O
+  - first:
+      213: -7244482323389871148
+    second: word P
+  - first:
+      213: -2958731576971845639
+    second: Word Q
+  - first:
+      213: 2122342966396673548
+    second: word R
+  - first:
+      213: -3626569214249384046
+    second: bear
+  - first:
+      213: 237437369437867433
+    second: snake
+  - first:
+      213: 6436037508085582259
+    second: leon
+  - first:
+      213: 6941370824643903497
+    second: fox
+  - first:
+      213: -1706258100852043968
+    second: word S
+  - first:
+      213: -8794257513110759122
+    second: word T
+  - first:
+      213: 5231505762582394716
+    second: word U
+  - first:
+      213: -7957009950946629912
+    second: word V
+  - first:
+      213: -8254024594463499482
+    second: word W
+  - first:
+      213: -5628066015477362033
+    second: word X
+  - first:
+      213: -4211684039734212376
+    second: star
+  - first:
+      213: -3019578262835028543
+    second: word Y
+  - first:
+      213: -1041267489841736579
+    second: word Z
+  - first:
+      213: 3942869940063739085
+    second: Frame
+  - first:
+      213: 8421900135528184309
+    second: border
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cat
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1856
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5cbca65f63bfc60800000000000000
+      internalID: 7852930802937218546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1856
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fdd7d211c4bb260800000000000000
+      internalID: 7114363673023209258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hippopotamus
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1856
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997a3b994505fa2a0800000000000000
+      internalID: -6724067394354698343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giraffe
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1856
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7ed4175799cebb0800000000000000
+      internalID: -4905377164422158367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word A
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1871
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9687cbbe3b8cc06f0800000000000000
+      internalID: -716977565579052951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word B
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1869
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076d6611df603dbe0800000000000000
+      internalID: -1453810570722093456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word C
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1871
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492bdb38fd7962cc0800000000000000
+      internalID: -3736131854613499244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word D
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1874
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5c236d3cf636e70800000000000000
+      internalID: 9107245758376232381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word E
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1875
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be793f1e6f91e90e0800000000000000
+      internalID: -2261341414749923349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word F
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1884
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b9e38f571dfd790800000000000000
+      internalID: -7503048149569725683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rabbit
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1656
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3b82b61240b2a70800000000000000
+      internalID: 8803134438204027881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cow
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1656
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca758e31d61b9d80800000000000000
+      internalID: -8242969605018649909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouse
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1656
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e5fdad302d3bb00800000000000000
+      internalID: 843248469247221362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheep
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1656
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d981552c458c9b540800000000000000
+      internalID: 5024267125671663773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word G
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1682
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ec63b168ef4aa50800000000000000
+      internalID: 6531625211529711143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word H
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1685
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395bedeb23dd59b20800000000000000
+      internalID: 3140659525181158803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word I
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1684
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35a59c5a0ef4d8a0800000000000000
+      internalID: -6281116259818560195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word J
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1679
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77573a21e8f7d80f0800000000000000
+      internalID: -1113093284715858569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word K
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1687
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14806a3c0eef65f20800000000000000
+      internalID: 3411194009088297025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word L
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1686
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d5508182c6e16d0800000000000000
+      internalID: -3017855780834157170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1456
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ec9c893c1ce34f0800000000000000
+      internalID: -847026634072928630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1456
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18149be7bc416db0800000000000000
+      internalID: -4800471374985160678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1456
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e0920eb0e68d840800000000000000
+      internalID: 5249066362984795658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1456
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a8be62b820aef90800000000000000
+      internalID: -6923718680452036062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word M
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1501
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d5cae9db1027e40800000000000000
+      internalID: 5652582396225936787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word N
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567c5796592c8ea90800000000000000
+      internalID: -7284358450296535195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word O
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9522de9adc2f7b340800000000000000
+      internalID: 4879635686412329561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word P
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1501
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db00c4b5bd667b90800000000000000
+      internalID: -7244482323389871148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Word Q
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1489
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff9cd88e4970f6d0800000000000000
+      internalID: -2958731576971845639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word R
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e5f9beea3147d10800000000000000
+      internalID: 2122342966396673548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bear
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1256
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2974c479386dbadc0800000000000000
+      internalID: -3626569214249384046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1256
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad4fbd870c8b4300800000000000000
+      internalID: 237437369437867433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leon
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1256
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b908869306615950800000000000000
+      internalID: 6436037508085582259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1256
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9000921fcf3b45060800000000000000
+      internalID: 6941370824643903497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word S
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1307
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fc4932c472258e0800000000000000
+      internalID: -1706258100852043968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word T
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1316
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2919b3c26584f580800000000000000
+      internalID: -8794257513110759122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word U
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1315
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57f12bf5ca0a9840800000000000000
+      internalID: 5231505762582394716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word V
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1313
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6e39f8b95039190800000000000000
+      internalID: -7957009950946629912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word W
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1314
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b5aafec50d37d80800000000000000
+      internalID: -8254024594463499482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word X
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1314
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82160717c715e1b0800000000000000
+      internalID: -5628066015477362033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1072
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8c5792ea71d85c0800000000000000
+      internalID: -4211684039734212376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word Y
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1128
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd1a30819d4816d0800000000000000
+      internalID: -3019578262835028543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: word Z
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1126
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7412df1cbcac81f0800000000000000
+      internalID: -1041267489841736579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc901df153e7b630800000000000000
+      internalID: 3942869940063739085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: border
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 47
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9b8f75d8990e470800000000000000
+      internalID: 8421900135528184309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Frame: 3942869940063739085
+      Word Q: -2958731576971845639
+      bear: -3626569214249384046
+      border: 8421900135528184309
+      cat: 7852930802937218546
+      cow: -8242969605018649909
+      dog: 7114363673023209258
+      dragon: -4800471374985160678
+      fox: 6941370824643903497
+      giraffe: -4905377164422158367
+      hippopotamus: -6724067394354698343
+      horse: 5249066362984795658
+      leon: 6436037508085582259
+      mouse: 843248469247221362
+      pig: -6923718680452036062
+      rabbit: 8803134438204027881
+      sheep: 5024267125671663773
+      snail: -847026634072928630
+      snake: 237437369437867433
+      star: -4211684039734212376
+      word A: -716977565579052951
+      word B: -1453810570722093456
+      word C: -3736131854613499244
+      word D: 9107245758376232381
+      word E: -2261341414749923349
+      word F: -7503048149569725683
+      word G: 6531625211529711143
+      word H: 3140659525181158803
+      word I: -6281116259818560195
+      word J: -1113093284715858569
+      word K: 3411194009088297025
+      word L: -3017855780834157170
+      word M: 5652582396225936787
+      word N: -7284358450296535195
+      word O: 4879635686412329561
+      word P: -7244482323389871148
+      word R: 2122342966396673548
+      word S: -1706258100852043968
+      word T: -8794257513110759122
+      word U: 5231505762582394716
+      word V: -7957009950946629912
+      word W: -8254024594463499482
+      word X: -5628066015477362033
+      word Y: -3019578262835028543
+      word Z: -1041267489841736579
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
